@@ -3,10 +3,39 @@
     <head>
         <title>Acción Ecológica</title>
         <style type="text/css">
-
+            #container{
+                width: 100%;
+                position: relative;
+            }
+            #formulario{
+                width: 30%;
+                margin: 0 auto;
+            }
         </style>
     </head>
     <body>
-        
+        <div id="container">
+            <form action="" id="formulario">
+                <div>
+                    <input type="text" id="usuario" placeholder="Usuario Predeterminado">
+                </div>
+                <div>
+                    <input type="text" id="accion" placeholder="Acción">
+                </div>
+                <div>
+                    <input type="radio" name="emocion" class="radioButton" id="MuyBien">
+                    <label for="MuyBien">Muy Bien</label><br>
+                    <input type="radio" name="emocion" class="radioButton" id="Bien">
+                    <label for="Bien">Bien</label><br>
+                    <input type="radio" name="emocion" class="radioButton" id="Neutral">
+                    <label for="Neutral">Neutral</label><br>
+                    <input type="radio" name="emocion" class="radioButton" id="Mal">
+                    <label for="Mal">Mal</label><br>
+                    <input type="radio" name="emocion" class="radioButton" id="MuyMal">
+                    <label for="MuyMal">Muy Mal</label>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </body>
 </html>
